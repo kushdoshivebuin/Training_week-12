@@ -1,6 +1,6 @@
 from configparser import ConfigParser
 
-def connection_credentials(filename = r"C:\Users\KushDoshi\Desktop\January\week_12\embedding_example\database.ini" , section = "postgresql") :
+def connection_credentials(filename = r"database.ini file" , section = "postgresql") :
     parser = ConfigParser()     #Create a parser
     parser.read(filename)       #Read config file
 
