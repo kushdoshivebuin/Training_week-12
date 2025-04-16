@@ -1,11 +1,13 @@
 import cv2
 import numpy as np
 
-image_path = r"C:\Users\KushDoshi\Downloads\64908027.jpg"
+image_path = r"Path of the image whose watermark needs to be removed"
 image = cv2.imread(image_path)
 
+# Converting the image to HSV
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
+# Masking the blue colours of the image
 lower_blue = np.array([85, 20, 155])
 upper_blue = np.array([105, 205, 255])
 mask = cv2.inRange(hsv, lower_blue, upper_blue)
