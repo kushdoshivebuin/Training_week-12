@@ -1,7 +1,7 @@
 import cv2
 
 # Load the image
-image = cv2.imread(r"C:\Users\KushDoshi\Downloads\Kush Doshi.jpg")
+image = cv2.imread(r"Path of the image to be blurred")
 
 resize_factor = 0.2
 resized_image = cv2.resize(image, (0, 0), fx=resize_factor, fy=resize_factor)
